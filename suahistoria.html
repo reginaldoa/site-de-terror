@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-image: url(imagens/zumbis.jpeg);
+        }
+
+        p{
+            text-align: center;
+            color: white;
+            font-family: cursive;
+        }
+
+        footer{
+            background-color: rgba(0, 0, 0, 0.459);
+        }
+
+        textarea{
+            background: rgba (255,255,255,0.1);
+            backdrop-filter: blur (10px);
+            -webkit-backdrop-filter: blur(10px);
+            background-color: rgba(250, 235, 215, 0.774);
+            font-family: cursive;
+            margin-left: 330px;
+            max-width: 500px;
+            resize: none;
+        
+        }
+    </style>
+    <title>Sua historia</title>
+</head>
+<body>
+    <header>
+        <h1>Sua história de terror</h1>
+    </header>
+
+    <nav>
+        <a href="inicio.html">Volte para o inicio</a>
+    </nav>
+
+
+    <p>Nos diga o seu nome: <input type="string" id="nome" name="nome"></p>
+    <textarea name="historia" id="historia" cols="100" rows="30"></textarea> 
+
+    <input type="button" value="enviar história" onclick="enviar()">
+
+    <footer id="horario">
+        Mostrar horário
+    </footer>
+
+        <script src="efeitos.js"></script>
+</body>
+</html>
